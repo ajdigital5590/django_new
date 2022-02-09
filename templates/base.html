@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="zxx">
+{% load static %}
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/boxicons.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/nice-select.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/odometer.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+
+    <title>Reera Storage System</title>{% block styleArea %} {% endblock %}
+</head>
+
+<body>
+
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="dot-wrap">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="navbar-area">
+
+        <div class="mobile-nav">
+            <a href="index.html" class="logo">
+                <img src="{% static 'img/logo1.gif' %}" alt="Logo">
+            </a>
+        </div>
+
+        <div class="main-nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="{% static 'img/logo1.gif' %}" alt="Logo">
+                    </a>
+                    <div class="collapse navbar-collapse mean-menu">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a href="{% url 'websites:index' %}" class="nav-link active">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{% url 'websites:about' %}" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{% url 'websites:product' %}" class="nav-link">Product</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="{% url 'websites:faq' %}" class="nav-link">Faq</a>
+                            </li> -->
+
+                            <li class="nav-item">
+                                <a href="{% url 'websites:gallery' %}" class="nav-link">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{% url 'websites:contact' %}" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="others-option-for-responsive">
+            <div class="container">
+                <div class="dot-menu">
+                    <div class="inner">
+                        <div class="circle circle-one"></div>
+                        <div class="circle circle-two"></div>
+                        <div class="circle circle-three"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="option-inner">
+                        <div class="others-option justify-content-center d-flex align-items-center">
+                            <div class="option-item">
+                                <i class="search-btn bx bx-search"></i>
+                                <i class="close-btn bx bx-x"></i>
+                                <div class="search-overlay search-popup">
+                                    <div class='search-box'>
+                                        <form class="search-form">
+                                            <input class="search-input" name="search" placeholder="Search" type="text">
+                                            <button class="search-button" type="submit"><i class="bx bx-search"></i></button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    {% block contentArea %} {% endblock %}
+    <footer class="footer-top-area pt-100 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h3>Find Us</h3>
+                        <ul class="address">
+                            <li class="location">
+                                <i class="bx bxs-location-plus"></i> C/24 Star industrial Eatset Near Hanuman Mandir Waliv Vasai East 401208
+                            </li>
+                            <li>
+                                <i class="bx bxs-envelope"></i>
+                                <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#0b636e6767644b6e6f7e646525686466"><span class="__cf_email__" data-cfemail="167e737a7a795673726379783875797b">rrengineering@27gmail.com</span></a>
+
+                            </li>
+                            <li>
+                                <i class="bx bxs-phone-call"></i>
+                                <a href="+91 (997-087-9511)">+91 (997-087-9511)</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h3>Useful links</h3>
+                        <ul class="link">
+                            <li>
+                                <a href="{% url 'websites:product' %}">Product</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'websites:about' %}">About us</a>
+                            </li>
+                            <!-- <li>
+                                <a href="{% url 'websites:faq' %}">Help(FAQ)</a>
+                            </li> -->
+                            <li>
+                                <a href="{% url 'websites:product' %}">Product</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'websites:contact' %}">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h3>Reerta Storage System</h3>
+                        <ul class="link">
+                            <li>
+                                <a href="{% url 'websites:index' %}">Our Service is your peace of mind</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'websites:index' %}">Service Support</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'websites:index' %}">Superior Values, Increased Uptime</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'websites:index' %}">Company Profile</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-widget">
+                        <h3>Reera Product Material</h3>
+                        <ul class="link">
+                            <li>
+                                <a href="{% url 'websites:about' %}">Electric Lifting Platform</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'websites:gallery' %}">Reera Equipment System</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'websites:gallery' %}">Scissor Lift Table</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'websites:gallery' %}">Automated Storage & Retrieval Systems</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <footer class="footer-bottom-area">
+        <div class="container">
+            <div class="copyright-wrap">
+                <p>Copyright@ 2021 Reera Group All Right Reserved</p>
+                <p>Design By: Ajit Singh</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="go-top">
+        <i class='bx bx-chevrons-up'></i>
+        <i class='bx bx-chevrons-up'></i>
+    </div>
+
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static 'js/meanmenu.min.js' %}"></script>
+
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+    <script src="{% static 'js/wow.min.js' %}"></script>
+
+    <script src="{% static 'js/nice-select.min.js' %}"></script>
+
+    <script src="{% static 'js/magnific-popup.min.js' %}"></script>
+
+    <script src="{% static 'js/jarallax.min.js' %}"></script>
+
+    <script src="{% static 'js/appear.min.js' %}"></script>
+
+    <script src="{% static 'js/odometer.min.js' %}"></script>
+
+    <script src="{% static 'js/form-validator.min.js' %}"></script>
+
+    <script src="{% static 'js/contact-form-script.js' %}"></script>
+
+    <script src="{% static 'js/ajaxchimp.min.js' %}"></script>
+
+    <script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+{% block scriptArea %} {% endblock %}
+
+</html>

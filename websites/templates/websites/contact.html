@@ -1,0 +1,112 @@
+{% extends 'base.html' %} {% load static %} {% block styleArea %} {% endblock %} {% block contentArea %}
+
+
+<div class="page-title-area bg-5">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>Contact</h2>
+            <!-- <ul>
+                <li>
+                    <a href="index.html">
+Home
+</a>
+                </li>
+                <li class="active">Contact</li>
+            </ul> -->
+        </div>
+    </div>
+</div>
+
+
+<section class="contact-info-area pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="single-contact-info">
+                    <i class="flaticon-call"></i>
+                    <h3>Call us</h3>
+                    <a href="+91 (997-087-9511)">+91 (997-087-9511)</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="single-contact-info">
+                    <i class="flaticon-pin"></i>
+                    <h3>Our location</h3>
+                    <a href="#">C/24 Star industrial Eatset Near Hanuman Mandir Waliv Vasai East 401208</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
+                <div class="single-contact-info">
+                    <i class="flaticon-email"></i>
+                    <h3>Email</h3>
+                    <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#422a272e2e2d022726372d2c6c212d2f"><span class="__cf_email__" data-cfemail="ddb5b8b1b1b29db8b9a8b2b3f3beb2b0">rrengineering@27gmail.com</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="main-contact-area pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contact-wrap contact-pages mb-0">
+                    <div class="contact-form">
+                        <div class="section-title">
+                            <h2>Drop us a message for any query</h2>
+                            <p>For more information about our courses, get in touch <br> with eduon contacts</p>
+                        </div>
+                        <form id="contactForm">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="contact-name">Name</label>
+                                        <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="contact-email">Email Address</label>
+                                        <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email">
+                                        <!-- <div class="help-block with-errors"></div> -->
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="contact-subject">Subject</label>
+                                        <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
+                                        <!-- <div class="help-block with-errors"></div> -->
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="contact-message">Message</label>
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" required data-error="Write your message"></textarea>
+                                        <!-- <div class="help-block with-errors"></div> -->
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <button type="submit" name="submit-form" class="default-btn btn-two">Send Message</button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="col-md-20 col-sm-15 col-xs-12">
+    <div class="map-area" id="map-location">
+        <iframe src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.9651128460914!2d72.86271156459314!3d19.413913286894914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a8ce4942e501%3A0x32c1ebf7a15e66b2!2sHanuman%20Mandir%20Rd%2C%20Golani%20Naka%2C%20Vasai%20East%2C%20Vasai-Virar%2C%20Maharashtra%20401208!5e0!3m2!1sen!2sin!4v1620961709018!5m2!1sen!2sin"
+            width="1500" height="800" style="border:0;" allowfullscreen=" " loading="lazy"></iframe></div>
+</div>
+{% endblock %} {% block scriptArea %} {% endblock %}

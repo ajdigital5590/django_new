@@ -1,0 +1,236 @@
+{% extends 'base.html' %} {% load static %} {% block styleArea %} {% endblock %} {% block contentArea %}
+
+
+<div class="page-title-area bg-19">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>Gallery</h2>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="shop-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="shop-card-wrap">
+                    <div class="showing-result">
+                    </div>
+                    <div class="row">
+                        {% for glr in MainGallery %}
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="single-shop">
+                                <div class="shop-img">
+                                    <img src="{{glr.image.url}}" alt="Image">
+                                </div>
+                                <h3>{{glr.name}}</h3>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+
+                        <div class="col-lg-12 col-md-12">
+                            <div class="pagination-area">
+
+                                <span class="page-numbers current" aria-current="page">1</span>
+                                <a href="#" class="page-numbers">2</a>
+                                <a href="#" class="page-numbers">3</a>
+                                <a href="#" class="page-numbers">4</a>
+                                <a href="#" class="next page-numbers">
+                                    <i class="bx bx-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="widget-sidebar">
+                    <!-- <div class="sidebar-widget search">
+                        <form class="search-form">
+                            <input class="form-control" name="search" placeholder="Search here" type="text">
+                            <button class="search-button" type="submit">
+<i class="bx bx-search"></i>
+</button>
+                        </form>
+                    </div> -->
+                    <div class="sidebar-widget categories">
+                        <h3>Reera Equipment System</h3>
+                        <p>It involves a set of services that clients will favor for their existing businesses. The system design & integration, factory solutions and factory upgrade. vehicles, storage and retrieval systems and order fulfillment systems
+                            are common types of systems. We offer a wide range of along with other storage products and solutions for the industrial marketplace.</p>
+                    </div>
+                    <div class="sidebar-widget popular-post">
+                        <h3 class="widget-title">Scissor Lift Table (Mobile)</h3>
+                        <p>
+                            'REERA' Scissor Lift Table (Mobile) are ideal and most innovative material handling equipment, for loading / unloading dies, boxes etc. from the machines or at height. It is also used for loading/unloading from small trucks or tempos and shifting. Since
+                            it is light weight it is easy to manouver. It comes with the parking brakes for easy loading of materials.</p>
+                    </div>
+                    <div class="sidebar-widget tags">
+                        <h3>Automated Storage & Retrieval Systems for Pallets</h3>
+                        <p>The 'REERA' AS/RS pallet load technology are designed to handle unitized loads into & out of very high density storage. While sometimes used to replenish picking locations with palletized commodities, the most common application
+                            of this equipment is for the buffering of supply chain deliveries, storing and controlling the inventory until it has released from QC. An AS/RS consists of a variety of computer-controlled systems for automatically placing
+                            and retrieval loads from defined storage locations. 'JAY' AS/RS typically finds applications where; there is a very volume of loads being moved into out of storage; storage density is important because of space constraints;
+                            no value adding content is present in this process. AS/RS can be used with standard loads as well as nonstandard loads. A fixed-aisle stacker crane is one of two-main designs: single mast or double mast. They are supported
+                            on a track by ceiling & floor guided. Another AS/RS technology is known as Radio Shuttle technology, where the horizontal movement is made by independent shuttles each operating on one level of the rack, while a stacker crane
+                            lifts & shifts the pallet shuttle & pallets to a P&D station.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade product-view-one" id="product-view-one">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-bs-dismiss="modal">
+<span aria-hidden="true">
+<i class="bx bx-x"></i>
+</span>
+</button>
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product-view-one-image">
+                        <div id="big" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="assets/img/shop/shop-img-1.jpg" alt="Image">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/shop/shop-img-2.jpg" alt="Image">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/shop/shop-img-3.jpg" alt="Image">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/shop/shop-img-4.jpg" alt="Image">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/shop/shop-img-5.jpg" alt="Image">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/shop/shop-img-6.jpg" alt="Image">
+                            </div>
+                        </div>
+                        <div id="thumbs" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="assets/img/shop/shop-img-1.jpg" alt="Image">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/shop/shop-img-2.jpg" alt="Image">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/shop/shop-img-3.jpg" alt="Image">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/shop/shop-img-4.jpg" alt="Image">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/shop/shop-img-5.jpg" alt="Image">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/shop/shop-img-6.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product-content">
+
+
+                        <div class="product-review">
+                            <div class="rating">
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                            </div>
+                            <a href="#" class="rating-count">3 reviews</a>
+                        </div>
+                        <ul class="product-info">
+                            <li>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At magnam ad reprehenderit fuga nam, non odit necessitatibus facilis beatae temporibus</p>
+                            </li>
+                            <li>
+                                <span>Availability:</span> <a href="#">In stock (7 items)</a>
+                            </li>
+                            <li>
+                                <span>Product Type:</span> <a href="#">Book</a>
+                            </li>
+                        </ul>
+                        <div class="product-color-switch">
+                            <h4>Color:</h4>
+                            <ul>
+                                <li>
+                                    <a href="#" title="Black" class="color-black"></a>
+                                </li>
+                                <li>
+                                    <a href="#" title="White" class="color-white"></a>
+                                </li>
+                                <li class="active">
+                                    <a href="#" title="Green" class="color-green"></a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Yellow Green" class="color-yellowgreen"></a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Teal" class="color-teal"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-add-to-cart">
+                            <div class="input-counter">
+                                <span class="minus-btn">
+<i class="bx bx-minus"></i>
+</span>
+                                <input type="text" value="1">
+                                <span class="plus-btn">
+<i class="bx bx-plus"></i>
+</span>
+                            </div>
+                            <button type="submit" class="default-btn">
+Add to Cart
+<i class="flaticon-right"></i>
+</button>
+                        </div>
+                        <div class="share-this-product">
+                            <h3>Share this product</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="bx bxl-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bx bxl-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bx bxl-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bx bxl-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %} {% block scriptArea %} {% endblock %}

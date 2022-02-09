@@ -1,0 +1,217 @@
+{% extends 'base.html' %} {% load static %} {% block styleArea %}{% endblock %} {% block contentArea %}
+
+
+
+<div class="page-title-area bg-1">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>About</h2>
+        </div>
+    </div>
+</div>
+
+
+<section class="education-area-two ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="education-content">
+                    <span class="top-title">About Us</span>
+                    <p>"We not only sell products to our customers, we help them make the right decision; that is why we have about 70-75% repeat & 90-95% satisfied customers".</p>
+                    <p>'REERA' is a market leader in the material handling and storage solutions area in India. Based in Mumbai, the company is a reliable name in providing intelligent storage solutions. The company set up in the year 1984 with a state-of-the-art
+                        manufacturing plant in Vasai, Thane is an ISO 9001-2008 certified company. The company is a leader in providing wide range warehousing/in-plant material handling equipment and A-Z storage solutions. We at 'REERA' provide the "complete
+                        storage solution" start from the site visit, product, customization, lay-outing, design and validation, consulting and installations. We do provide after sales services. However, we provide life-time telephonic after sales support
+                        to our esteemed clients.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="education-img-wrap">
+                    <div class="education-img-2">
+                        <img src="{% static 'img/11.gif' %}" alt="Image">
+                    </div>
+                    <div class="education-img-3">
+                        <img src="{% static 'img/11.gif' %}" alt="Image">
+                    </div>
+                    <div class="education-img-4">
+                        <img src="{% static 'img/11.gif' %}" alt="Image">
+                    </div>
+                    <div class="education-shape-1">
+                        <img src="{% static 'img/11.gif' %}" alt="Image">
+                    </div>
+                    <div class="education-shape-2">
+                        <img src="{% static 'img/11.gif' %}" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="affordable-area f5f6fa-bg-color pt-100 pb-70">
+    <div class="container">
+        <div class="section-title">
+            <span>Our Product Affordable</span>
+            <h2>Your benefit with Reera</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-affordable one">
+                    <i class="flaticon-investment"></i>
+                    <h3>Save time & money</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-affordable two">
+                    <i class="flaticon-balance"></i>
+                    <h3>Balance learning with life</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-affordable three">
+                    <i class="flaticon-online-education"></i>
+                    <h3>Gain valuable knowledge</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-affordable four">
+                    <i class="flaticon-route"></i>
+                    <h3>Finish what you started</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="feedback-area feedback-area-three feedback-area-style ptb-100">
+    <div class="container">
+        <!-- <div class="section-title">
+            <h2>Electric Lifting Platform</h2>
+        </div> -->
+        <!-- <div class="feedback-slider owl-theme owl-carousel">
+            <div class="feedback-item">
+                <p>Electric Lifting Platforms are ideal to transfer goods from one floor to another floor and the platform can be flushed with floor level when put installed. These are exclusively can be used when goods are to be lifted from/to height.
+                </p>
+                <div>
+                    <p>'REERA' Electric Lifting Platforms can be flushed with floor level when pit installed. The mast and carriages are made from prime quality steel profiles. The mast & carriage assembly are fitted with sealed ball bearing rollers and
+                        side thrust rollers to prevent lateral play. The series also provided with a AC power operated hydraulic power pack consisting of an electric motor, hydraulic gear pump, solenoid valve, oil reservoir, and oil level indicator, pressure
+                        release valve and pressure gauge. The most enhanced feature of this model is that, it is provided with a hydraulic cylinder made from seamless tube & hand chrome plated piston rod. The electric lifting platform is equipped with
+                        an electrical control system. The Moreover, we ensure that, all materials & hardware items confirm ISI specification.</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+
+
+<section class="teachers-area-three pt-100 pb-70">
+    <div class="container">
+        <div class="section-title">
+            <span>Reera Product</span>
+            <h2>Storage System</h2>
+        </div>
+        <div class="row">
+            {% for stor in MainStorage %}
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-teachers">
+                    <img src="{{stor.image.url}}" alt="Image">
+                    <div class="teachers-content">
+                        <h3>{{stor.name}}</h3>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+<div class="partner-area f5f6fa-bg-color ptb-100">
+    <div class="container">
+
+
+        <div class="partner-wrap owl-theme owl-carousel">
+            <div class="partner-item">
+                <a href="#">
+                    <img src="{% static 'img/partner-logo/1.gif' %}" alt="Image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#">
+                    <img src="{% static 'img/partner-logo/2.gif' %}" alt="Image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#">
+                    <img src="{% static 'img/partner-logo/3.gif' %}" alt="Image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#">
+                    <img src="{% static 'img/partner-logo/4.gif' %}" alt="Image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#">
+                    <img src="{% static 'img/partner-logo/5.gif' %}" alt="Image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#">
+                    <img src="{% static 'img/partner-logo/6.gif' %}" alt="Image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#">
+                    <img src="{% static 'img/partner-logo/7.gif' %}" alt="Image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#">
+                    <img src="{% static 'img/partner-logo/8.gif' %}" alt="Image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#">
+                    <img src="{% static 'img/partner-logo/9.gif' %}" alt="Image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#">
+                    <img src="{% static 'img/partner-logo/10.gif' %}" alt="Image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#">
+                    <img src="{% static 'img/partner-logo/11.gif' %}" alt="Image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#">
+                    <img src="{% static 'img/partner-logo/12.gif' %}" alt="Image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#">
+                    <img src="{% static 'img/partner-logo/13.gif' %}" alt="Image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#">
+                    <img src="{% static 'img/partner-logo/14.gif' %}" alt="Image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#">
+                    <img src="{% static 'img/partner-logo/1.gif' %}" alt="Image">
+                </a>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+{% endblock %} {% block scriptArea %} {% endblock %}
